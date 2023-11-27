@@ -191,18 +191,34 @@ body {
 /* ============== HERO STYLES ============== */
 
 /* ============== BENEFITS STYLES ============== */
+.benefits {
+  margin-top: 72px;
+  margin-bottom: 50px;
+  background-color: #1e1823;
+}
+
+.benefits-container {
+  padding-left: 34px;
+  padding-right: 34px;
+}
+
+.benefits-list {
+  display: flex;
+  gap: 88px;
+}
+
 .benefits-list-title {
-  /* color: #FFF; */
   font-size: 18px;
   font-weight: 600;
+  color: #fff;
 }
 
 .benefits-list-text {
-  /* color: #ffffffb3; */
   font-size: 14px;
   font-weight: 400;
   line-height: 1.28;
   letter-spacing: -0.02em;
+  color: #ffffffb3;
 }
 /* ============== /BENEFITS STYLES ============== */
 
