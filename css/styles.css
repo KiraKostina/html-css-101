@@ -207,9 +207,13 @@ body {
   gap: 88px;
 }
 
+.benefits-list-item {
+  width: calc((100% - 2 * 88px) / 3);
+}
 .benefits-list-title {
   font-size: 18px;
   font-weight: 600;
+  margin-bottom: 18px;
   color: #fff;
 }
 
