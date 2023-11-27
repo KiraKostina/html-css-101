@@ -1,3 +1,25 @@
+/* =========COMMON STYLES========= */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+ul,
+ol {
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-left: 0;
+}
+
+img {
+  display: block;
+}
 .list {
   list-style-type: none;
 }
@@ -12,24 +34,269 @@ button {
 
 body {
   font-family: 'Montserrat', sans-serif;
+  background-color: #fafafa;
 }
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.container {
+  width: 1168px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 16px;
+  padding-right: 16px;
+}
+
+.section {
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+/* =========COMMON STYLES========= */
+
+/* =========HEADER STYLES========= */
+.page-navigation {
+  width: 980px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
 .logo {
   font-size: 18px;
   font-weight: 700;
   line-height: 1.11;
   letter-spacing: -0.03em;
-  color: #111;
+  color: #111111;
 }
 
+.menu {
+  display: flex;
+  gap: 24px;
+}
 .menu-link {
-  color: #111;
+  display: block;
   font-size: 14px;
   font-weight: 500;
   line-height: 1.14;
   letter-spacing: -0.02em;
+  padding-top: 32px;
+  padding-bottom: 32px;
+  color: #111;
 }
 
 .menu-link:hover,
 .menu-link:focus {
   color: #fd9222;
 }
+
+.section-title {
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 1.17;
+  letter-spacing: -0.03em;
+  text-transform: uppercase;
+  text-align: center;
+  color: #111;
+}
+
+.accent-color {
+  color: #fd9222;
+}
+/* =========HEADER STYLES========= */
+
+/* ============== HERO STYLES ============== */
+.hero {
+  width: 1136px;
+  padding: 381px 40px 40px 40px;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 30px;
+  background: rgba(17, 17, 17, 0.4);
+}
+
+.main-title {
+  width: 470px;
+  font-size: 28px;
+  font-weight: 500;
+  line-height: 1.21;
+  letter-spacing: -0.03em;
+  margin-bottom: 32px;
+  color: #fff;
+}
+
+.hero-bottom-block {
+  display: flex;
+  align-items: center;
+}
+
+.buy-now-btn {
+  min-width: 144px;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 1.21;
+  letter-spacing: -0.03em;
+  border: none;
+  border-radius: 100px;
+  padding: 14px 40px;
+  margin-right: 14px;
+  background-color: #fd9222;
+  color: #fff;
+}
+
+.buy-now-btn:hover,
+.buy-now-btn:focus {
+  color: #fd9222;
+  background-color: #fcf1e0;
+}
+.how-made-link {
+  min-width: 183px;
+  font-size: 14px;
+  font-weight: 600;
+  border-radius: 100px;
+  border: 1px solid #fff;
+  padding: 14px 40px;
+  margin-right: auto;
+  color: #fff;
+}
+
+.how-made-link:hover,
+.how-made-link:focus {
+  color: #fd9222;
+}
+
+.scroll-down-link {
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 1.29;
+  letter-spacing: -0.03em;
+  color: #fff;
+}
+
+.scroll-down-link:hover,
+.scroll-down-link:focus {
+  color: #fd9222;
+}
+/* ============== HERO STYLES ============== */
+
+/* ============== BENEFITS STYLES ============== */
+.benefits-list-title {
+  /* color: #FFF; */
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.benefits-list-text {
+  /* color: #ffffffb3; */
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.28;
+  letter-spacing: -0.02em;
+}
+/* ============== /BENEFITS STYLES ============== */
+
+/* ============== INGREDIENTS STYLES ============== */
+.ingredients-description {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.29;
+  letter-spacing: -0.02em;
+  text-align: center;
+  color: #111;
+}
+
+.ingredients-list-title {
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 1.29;
+  letter-spacing: -0.02em;
+  text-transform: uppercase;
+  /* color: #fff; */
+}
+/* ============== INGREDIENTS STYLES ============== */
+
+/* ============== HOW MADE STYLES ============== */
+.how-made-title {
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 1.33;
+  color: #111;
+}
+
+.how-made-list-item {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.29;
+  letter-spacing: -0.02em;
+  color: #111;
+}
+/* ============== HOW MADE STYLES ============== */
+
+/* ============== REVIEW STYLES ============== */
+.reviews-list-fullname {
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 1.33;
+  text-align: center;
+  color: #111;
+}
+
+.reviews-list-text {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.29;
+  letter-spacing: -0.02em;
+  text-align: center;
+  color: rgba(17, 17, 17, 0.7);
+}
+
+.leave-review-btn {
+  font-size: 18px;
+  font-weight: 600;
+  color: #111;
+}
+
+.leave-review-btn:hover,
+.leave-review-btn:focus {
+  background-color: #fd9222;
+  color: #ffffff;
+}
+/* ============== REVIEW STYLES ============== */
+
+/* ============== FOOTER STYLES ============== */
+.page-footer-title {
+  /* color: #FFF; */
+  font-size: 28px;
+  font-weight: 500;
+  line-height: 1.21;
+  letter-spacing: -0.02em;
+}
+
+.contact-title {
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 1.29;
+  text-align: center;
+  /* color: #fff; */
+}
+
+.contact-list-link {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.29;
+  letter-spacing: -0.02em;
+  text-align: center;
+  /* color: #fff; */
+}
+/* ============== FOOTER STYLES ============== */
